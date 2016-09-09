@@ -312,8 +312,18 @@ $(function() {
             success: function( response ) {
                 var geoJsonLayer = L.geoJson(response, params).setZIndex(z).addTo(map);
                 layer.addLayer(geoJsonLayer);
+
+
                 if (layerName=='Floor' && floorID) {
                     map.fitBounds(_getFeatureBounds(response.features[0]));
+
+                    // add iPad link button
+                    var buildingId=response.features[0].properties.buildingId;
+                    var bldgSpatialStructureID=response.features[0].properties.onuma.bldgSpatialStructureID;
+                    var floorSpatialStructureID=response.features[0].properties.onuma.floorSpatialStructureID;
+                    var url = "https://www.onuma.com/bookmarklink/#onumaOnlineBookmark://|" + sysID + "|" + bldgSpatialStructureID + "|" + buildingId + "|" + floorSpatialStructureID+"|"+floorID+"|-1|-1";
+                    var link=$("<a target='_blank'>iPad link</a>").prop('href',url);
+                    $("#urlRequests ul").append($('<li></li>').append(link));
                 }else if (layerName=='Site' ) {
                     map.fitBounds(_getFeatureBounds(response.features[0]));
                 }

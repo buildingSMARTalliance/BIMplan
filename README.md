@@ -11,6 +11,8 @@ This runs best on Chrome browsers. Other browsers work, but the equipment level 
 
 Join [BIMStorm.com](http://BIMStorm.com) to learn more and how you can use this and expand the functionality.
 
+![folder](https://www.onuma.com/downloads/BIMStorm_Data_Independence_BIM_Plan_Viewer.jpg)
+
 Some of the known issues:
 
 - Not all building equipment and furniture is displaying correctly with the rotated image overlays in all browsers. For Firefox and Safari we change to display furniture as orthogonal and rotated polygons instead of the image overlays.

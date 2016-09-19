@@ -1,5 +1,5 @@
 Leaflet BIMplan creates building plan overlays from GeoJSON web services
-([Demo](https://bim-genie.com/static/planview/portfolio.html?sysID=177))
+###([Live Demo Linked to BIMStorm Projects](https://bim-genie.com/static/planview/portfolio.html?sysID=177))
 
 # Leaflet BIMplan
 

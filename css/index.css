@@ -1,0 +1,75 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+#container {
+    padding-right: 242px;
+}
+#map {
+    height: 100%;
+    border: 1px solid #000000;
+    float: left;
+    width: 100%;
+}
+#sidebar {
+    float: left;
+    width: 220px;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+    margin-right: -2000px;
+}
+.clear {
+    clear: left;
+}
+#planInfo {
+    display: block;
+    padding: 0 5px 0 15px;
+}
+#planInfo .red {
+    color: #ff0000;
+    font-weight: bold;
+}
+#urlRequests ul  {
+    padding-left:0;
+    margin-left:20px;
+}
+#urlRequests ul li  {
+    list-style-position:outside;
+}
+#urlRequests ul li:first-child {
+    list-style-type: none;
+}
+.list-title {
+    margin-bottom:-10px;
+}
+
+
+.leaflet-popup-content {
+    width:350px !important;
+    height:400px !important;
+    overflow-y: scroll !important;
+}
+.btn {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    background: #3b7094;
+    padding: 5px 20px 5px 20px;
+    display: block;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #459bd1;
+    cursor: pointer;
+    text-decoration: none;
+}
